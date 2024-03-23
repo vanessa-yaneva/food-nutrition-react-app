@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "calories": 95,
+    "protein": 0.5,
+    "carbs": 25,
+    "fats": 0.3
+  },
+  {
+    "id": 2,
+    "name": "Banana",
+    "calories": 105,
+    "protein": 1.3,
+    "carbs": 27,
+    "fats": 0.3
+  },
+  {
+    "id": 3,
+    "name": "Carrot",
+    "calories": 41,
+    "protein": 0.9,
+    "carbs": 10,
+    "fats": 0.2
+  },
+  {
+    "id": 4,
+    "name": "Donut",
+    "calories": 195,
+    "protein": 3.5,
+    "carbs": 22,
+    "fats": 10.9
+  },
+  {
+    "id": 5,
+    "name": "Cheese",
+    "calories": 150,
+    "protein": 2.5,
+    "carbs": 15,
+    "fats": 20
+  },
+  {
+    "id": 6,
+    "name": "Egg",
+    "calories": 155,
+    "protein": 13,
+    "carbs": 1.1,
+    "fats": 11
+  },
+  {
+    "id": 7,
+    "name": "Fish",
+    "calories": 206,
+    "protein": 22,
+    "carbs": 0,
+    "fats": 12
+  },
+  {
+    "id": 8,
+    "name": "Garlic",
+    "calories": 149,
+    "protein": 6.4,
+    "carbs": 33,
+    "fats": 0.5
+  },
+  {
+    "id": 9,
+    "name": "Honey",
+    "calories": 304,
+    "protein": 0.3,
+    "carbs": 82,
+    "fats": 0
+  },
+  {
+    "id": 10,
+    "name": "Ice Cream",
+    "calories": 207,
+    "protein": 3.5,
+    "carbs": 24,
+    "fats": 11
+  },
+  {
+    "id": 11,
+    "name": "Jam",
+    "calories": 250,
+    "protein": 0.5,
+    "carbs": 69,
+    "fats": 0
+  },
+  {
+    "id": 12,
+    "name": "Kale",
+    "calories": 49,
+    "protein": 4.3,
+    "carbs": 9,
+    "fats": 0.9
+  },
+  {
+    "id": 13,
+    "name": "Lentils",
+    "calories": 116,
+    "protein": 9,
+    "carbs": 20,
+    "fats": 0.4
+  },
+  {
+    "id": 14,
+    "name": "Mushrooms",
+    "calories": 22,
+    "protein": 3,
+    "carbs": 3.3,
+    "fats": 0.3
+  },
+  {
+    "id": 15,
+    "name": "Nuts",
+    "calories": 607,
+    "protein": 21,
+    "carbs": 18,
+    "fats": 56
+  },
+  {
+    "id": 16,
+    "name": "Olive Oil",
+    "calories": 884,
+    "protein": 0,
+    "carbs": 0,
+    "fats": 100
+  },
+  {
+    "id": 17,
+    "name": "Pasta",
+    "calories": 131,
+    "protein": 5,
+    "carbs": 25,
+    "fats": 1.1
+  },
+  {
+    "id": 18,
+    "name": "Quinoa",
+    "calories": 120,
+    "protein": 4.1,
+    "carbs": 21,
+    "fats": 1.9
+  },
+  {
+    "id": 19,
+    "name": "Rice",
+    "calories": 130,
+    "protein": 2.7,
+    "carbs": 28,
+    "fats": 0.3
+  },
+  {
+    "id": 20,
+    "name": "Spinach",
+    "calories": 23,
+    "protein": 2.9,
+    "carbs": 3.6,
+    "fats": 0.4
+  },
+  {
+    "id": 21,
+    "name": "Tofu",
+    "calories": 76,
+    "protein": 8,
+    "carbs": 1.9,
+    "fats": 4.8
+  },
+  {
+    "id": 22,
+    "name": "Noodles",
+    "calories": 124,
+    "protein": 4.5,
+    "carbs": 25,
+    "fats": 0.2
+  },
+  {
+    "id": 23,
+    "name": "Vegetable Soup",
+    "calories": 158,
+    "protein": 5,
+    "carbs": 30,
+    "fats": 2
+  },
+  {
+    "id": 24,
+    "name": "Watermelon",
+    "calories": 30,
+    "protein": 0.6,
+    "carbs": 7.6,
+    "fats": 0.2
+  },
+  {
+    "id": 25,
+    "name": "Yogurt",
+    "calories": 59,
+    "protein": 10,
+    "carbs": 3.6,
+    "fats": 0.4
+  }
+]

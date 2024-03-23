@@ -1,0 +1,19 @@
+.search-bar {
+  display: inline-block;
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+  width: 50%; /* Match the input width */
+  margin: 0 auto; /* Center the container if the search bar is wider */
+}
+
+.search-bar input {
+  width: 100%; /* Full width of the .input-container */
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

@@ -1,0 +1,21 @@
+/* AddFoodForm.css - Example adjustments for consistency */
+.nutrition-table input[type="text"],
+.nutrition-table input[type="number"] {
+  width: 100%; /* Ensure inputs fill their table cell */
+  padding: 8px; /* Comfortable padding */
+  margin: 4px 0; /* Spacing above and below inputs */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.submit-btn {
+  width: 100%; /* Match input width */
+  padding: 10px; /* Comfortable padding */
+  background-color: #4caf50; /* Consistent button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.submit-btn:hover {
+  background-color: #45a049; /* Slightly darker on hover for feedback */
+}
