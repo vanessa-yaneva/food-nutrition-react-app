@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
-import SearchBar from "./components/SearchBar";
-import NutritionTable from "./components/NutritionTable";
-import AddFoodForm from "./components/AddFoodForm";
-import staticFoodData from "./foodData.json";
+import SearchBar from "./components/SearchBar/SearchBar";
+import NutritionTable from "./components/NutritionTable/NutritionTable";
+import AddFoodForm from "./components/AddFoodForm/AddFoodForm";
+import staticFoodData from "./assets/foodData.json";
 
 function App() {
   const [selectedItems, setSelectedItems] = useState([]);
