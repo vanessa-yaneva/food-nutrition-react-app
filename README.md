@@ -12,3 +12,20 @@ The Food Nutrition Tracker is a user-friendly web application that enables users
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps.
+
+### Installation
+1.	Clone the repository:
+**git clone https://github.com/vanessa-yaneva/food-nutrition-react-app.git**
+
+2.	Navigate to the project directory:
+**cd food-nutrition-react-app**
+
+3.	Install NPM packages:
+**npm install**
+
+4.	Start the application:
+**npm start**
+
+Runs the app in the development mode.
+Open **http://localhost:3000** to view it in your browser.
+
