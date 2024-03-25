@@ -1,14 +1,13 @@
-/* src/components/NutritionTable.css */
 .nutrition-table {
-  width: 80%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .nutrition-table th,
 .nutrition-table td {
   border: 1px solid #ddd;
   text-align: left;
+  padding: 12px 20px;
   font-size: 16px;
 }
 
@@ -17,26 +16,38 @@
   color: white;
 }
 
-.nutrition-table td,
+.nutrition-table .totals-row,
 .nutrition-table th {
-  padding: 12px 20px;
+  font-weight: bold;
+  color: white;
 }
 
 .nutrition-table .totals-row {
   background-color: #025c3b;
-  color: white;
-  font-weight: bold;
 }
 
 .remove-item-btn {
   padding: 5px 10px;
-  background-color: #f44336; /* Red */
-  color: white;
+  background-color: #f44336;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  color: white;
 }
 
 .remove-item-btn:hover {
-  background-color: #d32f2f; /* Darker red */
+  background-color: #d32f2f;
+}
+
+/* Flex container setup */
+.nutrition-content {
+  display: flex;
+}
+
+.nutrition-table-container {
+  width: 70%;
+}
+
+.chart-container {
+  width: 30%;
 }

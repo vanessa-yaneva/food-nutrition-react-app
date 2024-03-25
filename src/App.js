@@ -32,7 +32,6 @@ function App() {
 
   const handleSelectItem = (itemId) => {
     const itemToAdd = staticFoodData.find((item) => item.id === itemId);
-    // Always add the selected item without checking if it's already been added
     setSelectedItems([...selectedItems, itemToAdd]);
   };
 
@@ -42,9 +41,12 @@ function App() {
     );
   };
 
+  const handleClearAll = () => {
+    setSelectedItems([]); // Clears all items from the table
+  };
+
   const toggleAddForm = () => {
     setShowAddForm(!showAddForm);
-    // Reset hasSearched to hide search results when toggling forms
     if (!showAddForm) setHasSearched(false);
   };
 
@@ -52,27 +54,24 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Nutrition Information Tracker</h1>
-        {!showAddForm && <SearchBar onSearch={handleSearch} />}
+        {!showAddForm && (
+          <SearchBar
+            onSearch={handleSearch}
+            foodItems={foodItems}
+            onSelectItem={handleSelectItem}
+            hasSearched={hasSearched}
+          />
+        )}
+        {/* Removed search results dropdown logic */}
         {!showAddForm ? (
           <>
-            {hasSearched && (
-              <div className="search-results-dropdown">
-                {foodItems.map((item) => (
-                  <div key={item.id} className="search-result-item">
-                    <span>{item.name}</span>
-                    <button onClick={() => handleSelectItem(item.id)}>
-                      Add
-                    </button>
-                  </div>
-                ))}
-              </div>
-            )}
             <button onClick={toggleAddForm} className="add-new-item-btn">
               Add New Food Item
             </button>
             <NutritionTable
               items={selectedItems}
               onRemoveItem={handleRemoveItem}
+              onClearAll={handleClearAll}
             />
           </>
         ) : (

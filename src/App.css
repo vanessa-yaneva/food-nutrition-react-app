@@ -36,14 +36,8 @@
     transform: rotate(360deg);
   }
 }
-/* styles.css */
-.search-bar input {
-  padding: 8px;
-  margin: 10px 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-/* Example styles */
+
+/* Styles for forms, items, and buttons */
 .form {
   margin: 20px 0;
 }
@@ -60,89 +54,31 @@
   justify-content: space-between;
   margin: 10px 0;
   padding: 5px;
-  border-bottom: 1px solid #ccc; /* Optional */
+  border-bottom: 1px solid #ccc;
 }
 
-.add-item-btn {
+/* Button styles */
+.add-item-btn,
+.add-new-item-btn,
+.go-back-btn {
   padding: 5px 10px;
-  background-color: #4caf50; /* Green background */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.add-item-btn:hover {
-  background-color: #45a049;
-}
-
-/* dropdown styles */
-.search-results-dropdown {
-  position: relative;
-  top: 100%; /* Adjust this value as necessary to align with the bottom of the search bar */
-  left: 0;
-  width: 50%; /* Match the width of your SearchBar input or adjust as necessary */
-  background-color: #f9f9f9;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.search-result-item {
-  padding: 5px;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.search-result-item:last-child {
-  border-bottom: none;
-}
-
-.search-result-item:hover {
-  background-color: #e9e9e9;
-}
-
-.search-result-item span {
-  color: black;
-  margin-right: auto;
-}
-
-.search-result-item button {
-  padding: 5px 10px;
-  background-color: #4caf50; /* Green */
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  margin-left: 20px;
+  background-color: #4caf50; /* Green */
 }
 
-.search-result-item button:hover {
+.add-item-btn:hover,
+.add-new-item-btn:hover {
   background-color: #45a049; /* Darker green */
 }
 
-.add-new-item-btn {
-  margin-top: 20px;
-  padding: 10px 10px;
-  background-color: #289733; /* Green background */
-  color: white; /* White text */
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.add-new-item-btn:hover {
-  background-color: #45a049; /* Darker green background on hover */
-}
 .go-back-btn {
-  padding: 8px 12px;
-  background-color: #007bff; /* Example blue color */
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 20px; /* Adjust as needed */
+  background-color: #007bff; /* Blue */
+  margin-top: 20px;
 }
 
 .go-back-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; /* Darker blue */
 }

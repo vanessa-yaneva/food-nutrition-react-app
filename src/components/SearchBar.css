@@ -1,19 +1,42 @@
-.search-bar {
-  display: inline-block;
-  width: 100%;
-}
-
-.input-container {
+.search-bar-container {
   position: relative;
-  width: 50%; /* Match the input width */
-  margin: 0 auto; /* Center the container if the search bar is wider */
+  width: 100%;
+  max-width: 500px; /* Adjust based on your design requirements */
+  margin: 0 auto;
 }
 
-.search-bar input {
-  width: 100%; /* Full width of the .input-container */
+.search-input {
+  width: 100%;
   padding: 10px;
-  margin: 8px 0;
+  margin-bottom: 8px; /* To prevent overlapping the dropdown */
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.search-results-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  border-radius: 0 0 4px 4px;
+}
+
+.search-result-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover {
+  background-color: #e9e9e9;
 }
