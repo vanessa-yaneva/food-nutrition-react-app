@@ -1,70 +1,53 @@
 import React, { useState } from "react";
 import "./App.css";
-import SearchBar from "./components/SearchBar/SearchBar";
+import FoodDataTable from "./components/FoodDataTable/FoodDataTable";
 import NutritionTable from "./components/NutritionTable/NutritionTable";
 import AddFoodForm from "./components/AddFoodForm/AddFoodForm";
 import staticFoodData from "./assets/foodData.json";
 
 function App() {
   const [selectedItems, setSelectedItems] = useState([]);
-  const [foodItems, setFoodItems] = useState([]);
+  const [foodItems, setFoodItems] = useState(staticFoodData);
   const [showAddForm, setShowAddForm] = useState(false);
-  const [hasSearched, setHasSearched] = useState(false);
-
-  const handleSearch = (query) => {
-    if (!query.trim()) {
-      setFoodItems([]);
-      setHasSearched(false);
-      return;
-    }
-    const searchResults = staticFoodData.filter((item) =>
-      item.name.toLowerCase().includes(query.toLowerCase())
-    );
-    setFoodItems(searchResults);
-    setHasSearched(true);
-  };
 
   const handleSubmit = (foodData) => {
     const newFoodItem = { ...foodData, id: Math.random().toString() };
+    // Add to selected items for NutritionTable
     setSelectedItems([...selectedItems, newFoodItem]);
-    setShowAddForm(false); // Hide the form after adding a new item
-  };
-
-  const handleSelectItem = (itemId) => {
-    const itemToAdd = staticFoodData.find((item) => item.id === itemId);
-    setSelectedItems([...selectedItems, itemToAdd]);
+    // Also add to foodItems for FoodDataTable
+    setFoodItems([...foodItems, newFoodItem]);
+    setShowAddForm(false);
   };
 
   const handleRemoveItem = (itemIndex) => {
-    setSelectedItems((currentItems) =>
-      currentItems.filter((_, index) => index !== itemIndex)
-    );
+    setSelectedItems(selectedItems.filter((_, index) => index !== itemIndex));
   };
 
   const handleClearAll = () => {
-    setSelectedItems([]); // Clears all items from the table
+    setSelectedItems([]);
   };
 
   const toggleAddForm = () => {
     setShowAddForm(!showAddForm);
-    if (!showAddForm) setHasSearched(false);
+  };
+
+  const handleAddItemToNutritionTable = (itemToAdd) => {
+    setSelectedItems([
+      ...selectedItems,
+      { ...itemToAdd, uniqueId: Math.random().toString() },
+    ]);
   };
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Nutrition Information Tracker</h1>
-        {!showAddForm && (
-          <SearchBar
-            onSearch={handleSearch}
-            foodItems={foodItems}
-            onSelectItem={handleSelectItem}
-            hasSearched={hasSearched}
-          />
-        )}
-        {/* Removed search results dropdown logic */}
         {!showAddForm ? (
           <>
+            <FoodDataTable
+              data={foodItems}
+              onAddItem={handleAddItemToNutritionTable}
+            />
             <button onClick={toggleAddForm} className="add-new-item-btn">
               Add New Food Item
             </button>

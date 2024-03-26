@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AddFoodForm.css"; // Ensure this is pointing to the correct CSS file
+import "./AddFoodForm.css";
 
 const AddFoodForm = ({ onAdd }) => {
   const [formData, setFormData] = useState({

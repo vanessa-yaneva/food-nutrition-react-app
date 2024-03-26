@@ -1,0 +1,64 @@
+.food-data-content-table {
+  border-collapse: collapse;
+}
+
+.food-data-content-table th,
+.food-data-content-table td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.food-data-content-table th {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.food-data-content-table .totals-row,
+.food-data-content-table th {
+  font-weight: bold;
+  color: white;
+}
+
+.page-numbers {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-numbers li {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  margin: 0 5px;
+}
+
+.page-numbers li.active {
+  font-weight: bold;
+  border: 2px solid #000;
+}
+
+.food-data-row:hover {
+  background-color: #565353; /* Or any other hover effect you prefer */
+  cursor: pointer; /* Indicates the row is clickable */
+}
+
+/* Styles for the search bar */
+.search-bar {
+  width: 100%; /* Full width to match container */
+  padding: 8px 10px; /* Adequate padding for text input */
+  margin-bottom: 20px; /* Space between the search bar and the table */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Readable text size */
+}
+
+/* You can add a focus style to improve user experience */
+.search-bar:focus {
+  outline: none; /* Removes the default focus outline */
+  border-color: #04aa6d; /* Highlight color when focused, adjust as needed */
+  box-shadow: 0 0 5px rgba(4, 170, 109, 0.5); /* Soft glow effect */
+}
