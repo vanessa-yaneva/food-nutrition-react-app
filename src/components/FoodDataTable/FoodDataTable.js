@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./FoodDataTable.css"; // Ensure this file is correctly linked to your component
+import "./FoodDataTable.css";
 
 const FoodDataTable = ({ data, onAddItem }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(10); // This can remain constant if it doesn't change
+  const [itemsPerPage] = useState(10);
   const [searchTerm, setSearchTerm] = useState("");
 
   const indexOfLastItem = currentPage * itemsPerPage;
