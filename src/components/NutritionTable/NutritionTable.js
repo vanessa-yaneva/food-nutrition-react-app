@@ -2,10 +2,9 @@ import React from "react";
 import "./NutritionTable.css";
 import { PieChart, Pie, Tooltip, Legend, Cell } from "recharts";
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"]; // for the chart
 
 const NutritionTable = ({ items, onRemoveItem, onClearAll }) => {
-  // onClearAll is the new prop
   const totals = items.reduce(
     (acc, item) => {
       acc.calories += parseFloat(item.calories);
@@ -63,11 +62,8 @@ const NutritionTable = ({ items, onRemoveItem, onClearAll }) => {
               <td>{totals.carbs.toFixed(2)}</td>
               <td>{totals.fats.toFixed(2)}</td>
               <td>
-                {/* New Clear All button */}
-                <button
-                  onClick={onClearAll}
-                  className="clear-all-btn" // You might want to style this similarly to .remove-item-btn
-                >
+                {/*Clear All button */}
+                <button onClick={onClearAll} className="clear-all-btn">
                   Clear All
                 </button>
               </td>

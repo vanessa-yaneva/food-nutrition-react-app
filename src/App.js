@@ -12,9 +12,9 @@ function App() {
 
   const handleSubmit = (foodData) => {
     const newFoodItem = { ...foodData, id: Math.random().toString() };
-    // Add to selected items for NutritionTable
+    // Add items to selected items for NutritionTable
     setSelectedItems([...selectedItems, newFoodItem]);
-    // Also add to foodItems for FoodDataTable
+    // Add items to foodItems for FoodDataTable
     setFoodItems([...foodItems, newFoodItem]);
     setShowAddForm(false);
   };
